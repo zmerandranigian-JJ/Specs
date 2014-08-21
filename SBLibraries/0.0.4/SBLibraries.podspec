@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                     }
   s.author       = { "Brad Roush" => "brad.roush@jibjab.com" }
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git", :tag => "0.0.4.2" }
+  s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git", :tag => "0.0.4.3" }
   # s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git"}
   s.requires_arc = true
 
@@ -32,6 +32,13 @@ Pod::Spec.new do |s|
     ss.source_files = "AccountAuthentication/SBAccountAuthentication/*.{h,m}"
     ss.dependency 'SBLibraries/Utilities'
     ss.dependency 'Reachability', '~> 3.1'
+  end
+
+  s.subspec 'Popups' do |ss|
+    ss.source_files = "Popups/SBPopup/Classes/*.{h,m}"
+    ss.resources = "Popups/SBPopup/Resources"
+    ss.dependency 'SBLibraries/Utilities'
+    ss.dependency 'SBLibraries/CommonAssets'
   end
 
 end
