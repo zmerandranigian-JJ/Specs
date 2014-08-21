@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                     }
   s.author       = { "Brad Roush" => "brad.roush@jibjab.com" }
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git", :tag => "0.0.4.1" }
+  s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git", :tag => "0.0.4.2" }
   # s.source       = { :git => "https://github.com/jibjab/storybots-libraries.git"}
   s.requires_arc = true
 
